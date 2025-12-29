@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>📊 To-Do & Expense Dashboard</h1>
+
+    <!-- To-Do Section -->
+    <section id="todo-section">
+      <h2>To-Do List</h2>
+      <input type="text" id="task-title" placeholder="Task Title">
+      <select id="task-priority">
+        <option value="">Select Priority</option>
+        <option>High</option>
+        <option>Medium</option>
+        <option>Low</option>
+      </select>
+      <button onclick="addTask()">Add Task</button>
+      <ul id="task-list"></ul>
+    </section>
+
+    <!-- Expense Section -->
+    <section id="expense-section">
+      <h2>Expenses</h2>
+      <input type="text" id="expense-title" placeholder="Expense Title">
+      <input type="number" id="expense-amount" placeholder="Amount">
+      <select id="expense-category">
+        <option value="">Select Category</option>
+        <option>Food</option>
+        <option>Travel</option>
+        <option>Bills</option>
+        <option>Shopping</option>
+      </select>
+      <button onclick="addExpense()">Add Expense</button>
+      <h3>Total: ₹<span id="total-expense">0</span></h3>
+      <ul id="expense-list"></ul>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
